@@ -7,26 +7,26 @@
     <title>Stock Analysis</title>
 </head>
 <body>
-   <header>
-        <a id="site-logo" href="https://st2.depositphotos.com/29475518/44654/v/450/depositphotos_446549144-stock-illustration-bull-trading-logo-design-vector.jpg">StockOps Analysis</a>
-        <input type="search" placeholder="Search...">
-   </header>
-    <nav id="ticker-tape">
-        <!-- TradingView Widget BEGIN -->
-        <div class="tradingview-widget-container">
-            <div class="tradingview-widget-container__widget"></div>
-            <script
-                type="text/javascript"
-                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
-                async
+ <header>
+   <a id="site-logo" href="https://st2.depositphotos.com/29475518/44654/v/450/depositphotos_446549144-stock-illustration-bull-trading-logo-design-vector.jpg">StockOps Analysis</a>
+   <input type="search" placeholder="Search...">
+ </header>
+   <nav id="ticker-tape">
+     <!--TradingView Widget BEGIN-->
+      <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <script
+               type="text/javascript"
+               src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+              async
     >
+               {
+               "symbols": [
                 {
-                "symbols": [
-                  {
-                    "description": "",
-                    "proName": "NASDAQ:TSLA"
-                  },
-                  {
+                   "description": "",
+                   "proName": "NASDAQ:TSLA"
+                },
+                 {
                     "description": "",
                     "proName": "NASDAQ:AAPL"
                   },
@@ -79,135 +79,148 @@
                  }
             </script>
         </div>
-        <!-- TradingView Widget END -->
+      <!--TradingView Widget END -->
     </nav>
     <main>
         <section id="symbol-info">
-            <!-- TradingView Widget BEGIN -->
-            <div class="tradingview-widget-container">
-                <div class="tradingview-widget-container__widget"></div>
-                <script
-                    type="text/javascript"
-                    src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
-                    async
-        >
-                    {
-                    "symbol": "NASDAQ:TSLA",
-                    "width": "100%",
-                    "locale": "en",
-                    "colorTheme": "dark",
-                    "isTransparent": true
-                     }
-                </script>
-            </div>
-            <!-- TradingView Widget END --></section>
+        </section>
         <section id="advanced-chart">
-            <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container" style="height:100%;width:100%">
-    <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
-    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span id="blue-text">Open TradingView</span></a></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-    {
-    "autosize": true,
-    "symbol": "NASDAQ:TSLA",
-    "interval": "D",
-    "timezone": "America/New_York",
-    "theme": "dark",
-    "style": "1",
-    "locale": "en",
-    "hide_side_toolbar": false,
-    "allow_symbol_change": true,
-    "calendar": false,
-    "support_host": "https://www.tradingview.com"
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
         </section>
         <section id="company-profile">
-            <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
-    {
-    "width": "100%",
-    "height": "100%",
-    "isTransparent": true,
-    "colorTheme": "dark",
-    "symbol": "NASDAQ:TSLA",
-    "locale": "en"
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
         </section>
         <section id="fundamental-data">
-            <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js" async>
-    {
-    "isTransparent": true,
-    "largeChartUrl": "",
-    "displayMode": "regular",
-    "width": "100%",
-    "height": "100%",
-    "colorTheme": "dark",
-    "symbol": "NASDAQ:TSLA",
-    "locale": "en"
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
         </section>
         <section id="technical-analysis">
-            <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-    {
-    "interval": "1D",
-    "width": "100%",
-    "isTransparent": true,
-    "height": "100%",
-    "symbol": "NASDAQ:TSLA",
-    "showIntervalTabs": true,
-    "displayMode": "single",
-    "locale": "en",
-    "colorTheme": "dark"
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
         </section>
         <section id="top-stories">
-            <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-    {
-    "feedMode": "all_symbols",
-    "isTransparent": false,
-    "displayMode": "regular",
-    "width": "100%",
-    "height": "100%",
-    "colorTheme": "dark",
-    "locale": "en"
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
         </section>
         <section id="powered-by-tv">
         </section>
     </main>
 <footer></footer>
-    <script src="index.js"></script>
 </body>
+<template id="symbol-info-template">
+  <!--TradingView Widget BEGIN-->
+ <div class="tradingview-widget-container">
+   <div class="tradingview-widget-container__widget"></div>
+   <script
+       type="text/javascript"
+       src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+       async
+>
+       {
+       "symbol": "NASDAQ:TSLA",
+       "width": "100%",
+       "locale": "en",
+       "colorTheme": "dark",
+       "isTransparent": true
+        }
+   </script>
+</div>
+<!--TradingView Widget END -->
+ </template>
+<template id="advanced-chart-template">
+<!--TradingView Widget BEGIN-->
+<div class="tradingview-widget-container" style="height:100%;width:100%">
+<div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span id="blue-text">Open TradingView</span></a></div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+{
+"autosize": true,
+"symbol": "NASDAQ:TSLA",
+"interval": "D",
+"timezone": "America/New_York",
+"theme": "dark",
+"style": "1",
+"locale": "en",
+"hide_side_toolbar": false,
+"allow_symbol_change": true,
+"calendar": false,
+"support_host": "https://www.tradingview.com"
+}
+</script>
+</div>
+<!--TradingView Widget END -->
+</template>
+<template id="company-profile-template">
+<!--TradingView Widget BEGIN-->
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<div class="tradingview-widget-copyright"></div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
+{
+"width": "100%",
+"height": "100%",
+"isTransparent": true,
+"colorTheme": "dark",
+"symbol": "NASDAQ:TSLA",
+"locale": "en"
+}
+</script>
+</div>
+<!--TradingView Widget END -->
+</template>
+<template id="fundamental-data-template" >
+<!--TradingView Widget BEGIN-->
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<div class="tradingview-widget-copyright"></div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js" async>
+{
+"isTransparent": true,
+"largeChartUrl": "",
+"displayMode": "regular",
+"width": "100%",
+"height": "100%",
+"colorTheme": "dark",
+"symbol": "NASDAQ:TSLA",
+"locale": "en"
+}
+</script>
+</div>
+<!--TradingView Widget END -->
+</template>
+<template id="technical-analysis-template">
+<!--TradingView Widget BEGIN-->
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<div class="tradingview-widget-copyright"></div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+{
+"interval": "1D",
+"width": "100%",
+"isTransparent": true,
+"height": "100%",
+"symbol": "NASDAQ:TSLA",
+"showIntervalTabs": true,
+"displayMode": "single",
+"locale": "en",
+"colorTheme": "dark"
+}
+</script>
+</div>
+<!--TradingView Widget END -->
+</template>
+<template id="top-stories-template">
+<!--TradingView Widget BEGIN-->
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<div class="tradingview-widget-copyright"></div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+{
+"feedMode": "all_symbols",
+"isTransparent": false,
+"displayMode": "regular",
+"width": "100%",
+"height": "100%",
+"colorTheme": "dark",
+"locale": "en"
+}
+</script>
+</div>
+<!--TradingView Widget END -->
+</template>
+<script src="index.js"></script>
 </html>
 
 
