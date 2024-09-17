@@ -57,7 +57,7 @@ header input[type='search'] {
     border-radius: 20px;
     background: var(
         --18-promo-gradient-02,
-        linear-gradient(90deg, #fefefe 0%, #0044ff 100%));
+        linear-gradient(90deg, #fefefe 0%, #bfbfbf 100%));
 }
 
 footer p, #powered-by-tv p {
