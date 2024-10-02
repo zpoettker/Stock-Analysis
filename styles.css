@@ -10,6 +10,15 @@
     box-sizing: border-box;
 }
 
+main {
+    display: grid;
+    width: 100%;
+    padding: 0 calc(var(--gap-size) * 0.5);
+    max-width: 92%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: var(--gap-size);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -17,6 +26,20 @@ body {
     flex-direction: column;
     align-items: center;
     background: #030812;
+}
+
+#textbox{
+position: sticky;
+top: 30px;
+background-color: rgba(58, 58, 64, 0.546);
+color: white;
+border: 1px solid rgb(85, 85, 85);
+height: 673px;
+font-size: 18px;
+padding: 25px;
+grid-column: 3;
+grid-row: 1 / 4;
+
 }
 
 header, footer {
@@ -60,25 +83,10 @@ header input[type='search'] {
         linear-gradient(90deg, #fefefe 0%, #bfbfbf 100%));
 }
 
-footer p, #powered-by-tv p {
-margin: 0;
-font-size: 12px;
-color: rgba(0, 0, 0, 0.6);
-}
-
-main {
-    display: grid;
-    width: 100%;
-    padding: 0 calc(var(--gap-size) * 0.5);
-    max-width: 960px;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: var(--gap-size);
-}
-
-.span-full-grid, #symbol-info, #advanced-chart, #company-profile, #fundamental-data {
+.span-two-collumns, #symbol-info, #advanced-chart, #company-profile, #fundamental-data {
     grid-column: span 2;
 }
-.span-one-column, #technical-analysis, #top-stories, #powered-by-tv {
+.span-one-column, #technical-analysis, #top-stories, #empty {
     grid-column: span 1;
 }
 .skeleton, #company-profile, #fundamental-data, #technical-analysis, #top-stories {
@@ -110,26 +118,10 @@ main {
     height: 425px;
 }
 
-#powered-by-tv {
-    display: flex;
-    background: #f8f9fd;
-    border: solid 1px #e0e3eb;
-    text-align: justify;
-    flex-direction: column;
-    gap: 8px;
-    font-size: 14px;
-    padding: 16px;
-    border-radius: 6px;
-}
-
-#powered-by-tv a, #powered-by-tv a:visited {
-    color: #2962ff;
-}
-
-@media (max-width: 800px) {
+@media (max-width: 2000px) {
     main > section,
-    .span-full-grid, #technical-analysis, #top-stories, #powered-by-tv {
-        grid-column: span 2;
+    .span-two-collumns, #technical-analysis, #top-stories{
+        grid-column: span 1;
     }
 
 }
