@@ -50,7 +50,7 @@ header #site-logo {
     padding: 16px;
     background: var(
         --18-promo-gradient-02,
-        linear-gradient(90deg, #00bce5 0%, #2962ff 100%)
+        linear-gradient(90deg, hwb(191 0% 10%) 0%, #2962ff 100%)
     );
    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
